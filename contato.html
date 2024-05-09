@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Entre em contato</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			background-color: #f2f2f2;
+		}
+		header {
+			background-color: #333;
+			color: #fff;
+			padding: 1rem;
+		}
+        h1 {
+             margin: 0; 
+            }
+		
+		nav ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+		nav ul li {
+			display: inline-block;
+			margin-right: 1rem;
+		}
+		nav ul li a {
+			color: #fff;
+			text-decoration: none;
+		}
+		section {
+			padding: 2rem;
+		}
+		h2 {
+			margin-top: 0;
+		}
+		form label {
+			display: block;
+			margin-bottom: 0.5rem;
+		}
+		form input[type="text"],
+		form input[type="email"],
+		form textarea {
+			width: 100%;
+			padding: 0.5rem;
+			margin-bottom: 1rem;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
+		form input[type="submit"] {
+			background-color: #333;
+			color: #fff;
+			padding: 0.5rem 2rem;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+		form input[type="submit"]:hover {
+			background-color: #444;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1> <img src="imagens/mc.jpg" width="50px"> <span style="font-size: 15px;">Saul Goodman</span></h1>
+		<nav>
+			<ul>
+                <br>
+				<li><a href="index.html">Home</a></li>
+				<!-- Other navigation links -->
+			</ul>
+		</nav>
+	</header>
+	<section id="contact">
+		<h2>Contact Us</h2>
+		<form action="/submit-contact-form" method="post">
+			<label for="name">Name:</label><br>
+			<input type="text" id="name" name="name"><br>
+			<label for="email">Email:</label><br>
+			<input type="email" id="email" name="email"><br>
+			<label for="message">Message:</label><br>
+			<textarea id="message" name="message"></textarea><br>
+			<input type="submit" value="Submit">
+		</form>
+	</section>
+</body>
+</html>
